@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador&Validador</title>
+  <link rel="shortcut icon" href="./assets/img/id-card_7553002.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Gerador de CPF</h1>
+    <button>Gerar</button>
+    <div class="resultado">
+      <span class="cpf-gerado"></span>
+      <img src="./assets/img/copiar-arquivos.png" alt="icone de copiar" hidden class="botao-copiar">
+    </div>
+  </section>
+
+  <section class="container">
+    <h1>Validador de CPF</h1>
+    <div class="resultado">
+      <label for="cpf">Digite o CPF:</label>
+      <input type="text" id="cpf" name="cpf">
+      <button class="botao-validar">Validar</button>
+    </div>
+      <div class="cpf-validado"></div>
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

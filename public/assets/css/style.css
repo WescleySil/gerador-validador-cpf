@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --error: rgb(150, 20, 20);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.container h1 {
+  text-align: center;
+
+}
+
+.resultado {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--primary-color-darker);
+  margin: 40px auto;
+  box-shadow: #000 3px 3px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  height: 40px;
+  width: 80px;
+}
+
+.container button:active {
+  box-shadow: #000 1px 1px;
+  transform: translate(2px);
+}
+
+.cpf-gerado {
+  color: var(--primary-color);
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.botao-copiar {
+  align-self: baseline;
+  margin: 0 15px;
+  cursor: pointer;
+  filter: opacity(0.5);
+}
+
+.botao-copiar:active {
+  filter: opacity(1.0);
+}
+
+.resultado label,input{
+  font-size: larger;
+  padding: 5px;
+}
+
+.cpf-validado {
+  display: flex;
+  font-size: x-large;
+  text-align: center;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.cpf-validado[valid=false]{
+  color: var(--error)
+}
+
+.cpf-validado[valid=true]{
+  color: var(--primary-color);
+}
