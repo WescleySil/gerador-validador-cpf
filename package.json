@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gera": "webpack -w"
+    "build": "webpack",
+    "server": "http-server -p 80 -d false",
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
   },
   "dependencies": {
     "core-js": "^3.3.2",
+    "http-server": "^14.1.1",
     "regenerator-runtime": "^0.13.3"
   }
 }
