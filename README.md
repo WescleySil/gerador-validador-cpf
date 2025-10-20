@@ -69,7 +69,3 @@ docker run -d -p 5000:5000 --name gerador-validador-cpf gerador-validador-cpf
 
 ## Autor
 Desenvolvido com carinho por WescleySil.
-
----
-
-*Observação:* Este README foi adaptado a partir do README do projeto "calculadora" para fornecer instruções específicas deste repositório.
