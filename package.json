@@ -1,11 +1,11 @@
 {
-  "name": "aula93",
+  "name": "gerador-validador",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "server": "http-server -p 80 -d false",
+    "server": "http-server -p 80 -d false"
   },
   "author": "",
   "license": "ISC",
